@@ -1,0 +1,21 @@
+﻿@model WebDemoFunctions.Web.Services.InMemoryStringChecker
+
+<h1>Prüfergebnis</h1>
+<div>
+    <h2>
+        1. Text: @Model.FirstString
+    </h2>
+</div>
+<div>
+    <h2>
+        2. Text: @Model.SecondString
+    </h2>
+</div>
+<div>
+    <h2>
+        Kleinbuchstaben in beiden Texten: @string.Join(", ",Model.LowerCaseLettersInBothStrings().ToArray())
+    </h2>
+</div>
+<div>
+    <a asp-action="Index">Zurück zur Startseite</a>
+</div>

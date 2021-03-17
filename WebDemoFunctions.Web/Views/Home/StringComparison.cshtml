@@ -1,0 +1,19 @@
+﻿@model WebDemoFunctions.Web.Services.InMemoryStringChecker
+
+<form asp-action="StringComparison">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="FirstString" class="form-label">Erster Text:</label>
+        <input asp-for="FirstString" type="text" class="form-control">
+        <span asp-validation-for="FirstString" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SecondString" class="form-label">Zweiter Text:</label>
+        <input asp-for="SecondString" type="text" class="form-control">
+        <span asp-validation-for="SecondString" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Prüfen</button>
+</form>
+  
+
+
